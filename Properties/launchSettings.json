@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Walk_Rename": {
+      "commandName": "Project",
+      "commandLineArgs": "C:\\Users\\wendt\\OneDrive - American Red Cross\\TrainingData"
+    }
+  }
+}
