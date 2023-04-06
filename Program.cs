@@ -24,9 +24,9 @@ void TraverseDirectory(string path, Action<string> action)
                 foreach (string filename in matches)
                 {
                     if (filename.ToLowerInvariant().Contains("-source"))
-                        File.Move(filename, filenameElements[0] + "_EN." + Path.GetExtension(filename));
+                        File.Move(filename, Path.GetDirectoryName(filename) + filenameElements[0] + "_EN." + Path.GetExtension(filename));
                     else
-                        File.Move(filename, filenameElements[0] + "_ES." + Path.GetExtension(filename));
+                        File.Move(filename, Path.GetDirectoryName(filename) + filenameElements[0] + "_ES." + Path.GetExtension(filename));
                 }
             }
             else
